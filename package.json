@@ -1,4 +1,21 @@
 {
+  "name": "leetcode-solutions",
+  "version": "1.0.0",
+  "description": "Personal LeetCode problem solutions in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "leetcode",
+    "algorithms",
+    "data-structures"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^25.0.8",
