@@ -7,7 +7,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "tsc",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "run": "ts-node",
+    "check": "tsc --noEmit"
   },
   "keywords": [
     "leetcode",
@@ -21,6 +23,7 @@
     "@types/node": "^25.0.8",
     "jest": "^30.2.0",
     "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
 }
