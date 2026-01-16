@@ -1,11 +1,12 @@
 //O(n)
 // Not optimal
 export function findDisappearedNumbers(nums: number[]): number[] {
-  const arr = new Set([...Array(nums.length + 1).keys()]);
+  // const arr = new Set([...Array(nums.length + 1).keys()]);
+  const arr = new Set(Array.from({ length: nums.length }, (_, i) => i + 1));
   const set = new Set(nums);
   const result: number[] = [];
   for (const num of arr) {
-    if (!set.has(num) && num !== 0) {
+    if (!set.has(num)) {
       result.push(num);
     }
   }
