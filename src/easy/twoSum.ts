@@ -18,11 +18,11 @@ function twoSum(nums: number[], target: number): number[] {
 function twoSumOptimal(nums: number[], target: number): number[] {
   const seen = {};
   for (let i = 0; i < nums.length; i++) {
-    const num = nums[i];
-    const tar = target - num;
-    if (seen[tar] !== undefined) {
-      return [seen[tar], i];
+    const curr = nums[i];
+    const tarLeft = target - curr;
+    if (seen[tarLeft] !== undefined) {
+      return [seen[tarLeft], i];
     }
-    seen[num] = i;
+    seen[curr] = i;
   }
 }
