@@ -1,3 +1,5 @@
+// Only 1 solution, CANNOT use the same element twice.
+
 // O(n2)
 function twoSum(nums: number[], target: number): number[] {
   for (let i = 0; i < nums.length; i++) {
