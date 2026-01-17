@@ -14,19 +14,13 @@ function twoSum(nums: number[], target: number): number[] {
 
 // O(n)
 function twoSumOptimal(nums: number[], target: number): number[] {
-  let valuesMap = new Map<number, number>();
-  let indexes: number[] = [];
-
+  const seen = {};
   for (let i = 0; i < nums.length; i++) {
-    const value = nums[i];
-
-    if (valuesMap.has(target - value)) {
-      indexes[0] = valuesMap.get(target - value);
-      indexes[1] = i;
-      break;
+    const num = nums[i];
+    const tar = target - num;
+    if (seen[tar] !== undefined) {
+      return [seen[tar], i];
     }
-    valuesMap.set(value, i);
+    seen[num] = i;
   }
-
-  return indexes;
 }
