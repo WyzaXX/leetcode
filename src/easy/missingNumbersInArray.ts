@@ -1,4 +1,4 @@
-//O(n)
+// O(n)
 // Not optimal
 export function findDisappearedNumbers(nums: number[]): number[] {
   // const arr = new Set([...Array(nums.length + 1).keys()]);
